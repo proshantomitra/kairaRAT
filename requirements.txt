@@ -1,0 +1,6 @@
+pyinstaller
+pyautogui
+public-ip
+opencv-python
+colorama
+pynput
