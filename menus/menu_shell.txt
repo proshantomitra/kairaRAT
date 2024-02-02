@@ -1,0 +1,38 @@
+In shell, you can use OS shell commands directly and view the results.
+Except the following commands, the commands you enter will executed directly OS shell.
+Here is the arbitrary commands for shell terminal :
+
+
+cd <directory_name>
+            Changes directory to 'directory_name'
+
+pwd
+            Returns current directory
+
+mkdir <directory_name>
+            Creates a directory named 'directory_name'
+
+rmdir <directory_name>
+            Removes directory named 'directory_name'
+
+rm <file_name>
+            Removes file named 'file_name'
+
+rename <old_file_name> <new_file_name>
+            Renames a file named 'old_file_name' to 'new_file_name'
+
+rename <old_directory_name> <new_directory_name>
+            Renames a directory named 'old_directory_name' to 'new_directory_name'
+
+download <file_name>
+            Downloads a file named with 'file_name' from victim computer to /downloads 
+
+clear
+            Clears the terminal
+
+exit
+            Exits the shell terminal
+
+help
+            Prints this message
+
