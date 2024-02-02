@@ -1,6 +1,8 @@
-pyinstaller
-pyautogui
-public-ip
-opencv-python
 colorama
+pypiwin32
+pycryptodome
+pillow
+public_ip
+opencv-python
 pynput
+datetime
