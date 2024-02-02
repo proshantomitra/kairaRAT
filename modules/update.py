@@ -1,4 +1,8 @@
-import json
+# A module to check updates and make update.
+# I need to make this.
+
+
+import json 
 from urllib.request import urlopen
 import os
 from time import sleep
@@ -20,9 +24,14 @@ def get_latest_info():
 def get_current_info():
     global current_info
     try:
-        with open("modules/version.json", "r") as file:
-            current_info = json.loads(file.read())
-        return current_info
+        if os.name == "nt":
+            with open("modules\\version.json", "r") as file:
+                current_info = json.loads(file.read())
+            return current_info
+        else:
+            with open("modules/version.json", "r") as file:
+                current_info = json.loads(file.read())
+            return current_info
     except FileNotFoundError:
         return {"version": ""}
 
@@ -37,8 +46,13 @@ def update():
         print(Fore.RED + f"\n[!]An update available.Your version {current_info} but current version is {latest_info}" + Fore.GREEN + "\n\n[+]Update starting..." + Fore.RESET)
         sleep(2)
         os.system("git clone https://github.com/st4inl3s5/kairaRAT")
-        move("kairaRAT", "../kairaRAT")
-        print(Fore.GREEN + "\n\n[+]kairaRAT has been updated successfully.\n\n")
-        os.system("python3 ../kairaRAT/main.py -h")
+        if os.name == "nt":
+            move("kairaRAT", "..\\\kairaRAT")
+            print(Fore.GREEN + "\n\n[+]kairaRAT has been updated successfully.\n\n")
+            os.system("python3 ..\\\kairaRAT\\main.py -h")
+        else:
+            move("kairaRAT", "../kairaRAT")
+            print(Fore.GREEN + "\n\n[+]kairaRAT has been updated successfully.\n\n")
+            os.system("python3 ../kairaRAT/main.py -h")
     else:
         print(Fore.GREEN + "\n[+]Your version is up to date.")
