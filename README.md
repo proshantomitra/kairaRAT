@@ -3,7 +3,7 @@ kairaRAT is a remote access trojan tool built with python.
 
   [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/st4inl3s5)
 
-![zibib1](https://github.com/st4inl3s5/kairaRAT/assets/68844502/c961f70d-1a3a-4a82-bc35-4ac4b95b9761)
+![zibib7](https://github.com/st4inl3s5/kairaRAT/assets/68844502/2382d2d6-99ab-4bd9-a694-f9a8adabcaea)
 
 ## Features
 
