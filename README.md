@@ -1,11 +1,18 @@
 # kairaRAT
-kairaRAT is a remote access trojan tool built with python.
+kairaRAT is a remote access trojan tool built with python. 
+
+# This is based on the project of the same name by: st4inl3s5 (stainless)
 
 Needs python 3.8 or higher
 
-  [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/st4inl3s5)
-
-![zibib7](https://github.com/st4inl3s5/kairaRAT/assets/68844502/2382d2d6-99ab-4bd9-a694-f9a8adabcaea)
+## EDUCATIONAL PURPOSES ONLY. 
+### There is absolutely no warranty express or implied. 
+### Do NOT USE on computers that you do not control.
+### It is made exclusively for training in a highly Controlled lab environment. 
+### Do NOT use outside a controlled lab. This is your last WARNING. 
+### You are completely responsible for how you use kairaRAT. Any USE of kairaRAT is at your own risk. 
+### Wrong / Improper use of kairaRAT may be an offence.
+### Use of kairaRAT for BAD / Illegal activities is a punishable offence. 
 
 ## Features
 
@@ -33,15 +40,18 @@ Needs python 3.8 or higher
 
 + Taking browser saved cookies, passwords and credit cards.
 
-## EDUCATIONAL PURPOSES ONLY.
-
-#### I am not responsible in bad uses of kairaRAT.kairaRAT is made for security researchers.Don't use it for illegal purposes.
 
 ## SETUP
 
 You need 2 OS.1)Unix(You can use kali linux) OS 2)Windows OS.Unix for listening connections and managing connections.Windows for building .exe executable file.To make setup, execute the following command on both of them :
 
-     pip install -r requirements.txt
+ On Windows:
+     
+     pip install -r winrequirements.txt
+
+ On Linux:
+
+     pip install -r linrequirements.txt
 
 ## USAGE
 
@@ -91,4 +101,4 @@ You need 2 OS.1)Unix(You can use kali linux) OS 2)Windows OS.Unix for listening 
  
 ![zibib6](https://github.com/st4inl3s5/kairaRAT/assets/68844502/f6695aa3-cb72-4b80-83d1-9ff27ec8c681)
 
-__You can contact me on instagram : https://www.instagram.com/arduinocum.py or in telegram : https://t.me/+5XoMhXv4SghhYmE0__
+
