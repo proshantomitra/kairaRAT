@@ -1,5 +1,6 @@
 colorama
 pypiwin32
+pyinstaller
 pycryptodome
 pillow
 public_ip
