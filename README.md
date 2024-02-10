@@ -1,19 +1,19 @@
 # kairaRAT
 kairaRAT is a remote access trojan tool built with python. 
 
-# This is based on the project of the same name by: st4inl3s5 (stainless)
+This is based on the project of the same name by: st4inl3s5 (stainless)
 
 Needs python 3.8 or higher
 
-## EDUCATIONAL PURPOSES ONLY. 
-### There is absolutely no warranty express or implied. 
-### Do NOT USE on computers that you do not control.
-### It is made exclusively for training in a highly Controlled lab environment. 
-### Do NOT use outside a controlled lab. This is your last WARNING. 
-### You are completely responsible for how you use kairaRAT. Any USE of kairaRAT is at your own risk. 
-### Wrong / Improper use of kairaRAT may be an offence.
-### Use of kairaRAT for BAD / Illegal activities is a punishable offence. 
-
+# EDUCATIONAL PURPOSES ONLY. 
+#### > There is absolutely no warranty express or implied. 
+#### > Do NOT USE on computers that you do not control.
+#### > It is made exclusively for training in a highly Controlled lab environment. 
+#### > Do NOT use outside a controlled lab. This is your last WARNING. 
+#### > You are completely responsible for how you use kairaRAT. Any use of kairaRAT is at your own risk. 
+#### > Wrong / Improper use of kairaRAT may be an offence.
+#### > Use of kairaRAT for BAD / Illegal activities is a punishable offence. 
+ 
 ## Features
 
 + File/directory managing (delete, rename, create, change etc.)
