@@ -1,0 +1,7 @@
+colorama
+pycryptodome
+pillow
+public_ip
+opencv-python
+pynput
+datetime
